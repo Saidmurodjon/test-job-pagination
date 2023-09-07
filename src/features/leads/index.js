@@ -41,7 +41,7 @@ function Leads() {
   };
   useEffect(() => {
     dispatch(addNewBasket({ order }));
-     // eslint-disable-next-line react-hooks/exhaustive-deps
+     // eslint-disable-next-line
   }, [order]);
   return (
     <>

@@ -7,7 +7,7 @@ const NavBar = () => {
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(getLeadsContent());
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line
   }, []);
   console.log(orders);
 
