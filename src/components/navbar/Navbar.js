@@ -1,12 +1,13 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import { SlBasket } from "react-icons/sl";
 import { useDispatch, useSelector } from "react-redux";
-import { getLeadsContent, addNewBasket } from "../../features/leads/leadSlice";
+import { getLeadsContent } from "../../features/leads/leadSlice";
 const NavBar = () => {
   const { orders } = useSelector((state) => state.leads);
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(getLeadsContent());
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   console.log(orders);
 

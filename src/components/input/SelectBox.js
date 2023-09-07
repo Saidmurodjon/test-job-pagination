@@ -3,7 +3,6 @@ import React, { useState } from "react";
 function SelectBox(props) {
   const {
     labelTitle,
-    labelDescription,
     defaultValue,
     containerStyle,
     placeholder,

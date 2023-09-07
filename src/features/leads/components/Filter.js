@@ -18,6 +18,7 @@ function Filter() {
   };
   useEffect(() => {
     dispatch(filter({ leadObj }));
+     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [leadObj]);
   useEffect(() => {
     const fetchCategories = async () => {
