@@ -36,7 +36,7 @@ function Filter() {
       <div className="m-2 flex ">
         <div className="">
           <InputText
-            type="text"
+            type="search"
             defaultValue={leadObj.search}
             name={"search"}
             updateType="search"
